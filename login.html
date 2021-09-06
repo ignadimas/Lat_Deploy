@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .dog {
+        filter: blur(10px) grayscale(18);
+        /*   filter: grayscale(18); */
+        transition-duration: 1s;
+        /*   transition-delay: 1s; */
+        /* transition-property: transform filter; */
+        /* transition-timing-function: antialiased; */
+        animation: bergerak 2s 1;
+        }
+
+        .dog:hover{
+        filter: blur(0px);
+        transform: translate(20px,20px);
+        }
+
+        @keyframes bergerak {
+        from{
+            transform: scale(3);
+        }
+        to{
+            transform: scale(1);
+        }
+        }
+
+        </style>
+</head>
+<body>
+    <img class="dog" src="../Pert 1/chicken.jpg" alt="DOG" height="300">
+    <form action="">
+        <h1>Register</h1>
+        <p>Gender : </p> 
+        <input type="radio" name="" id="">male
+        <input type="radio" name="" id="">female
+        <input type="radio" name="" id="">not to say <br><br>
+        <label for="Birthdayinput">BirthDay Date</label>
+        <input type="date" name="" id="Birthdayinput">
+        <br>
+        <select name="" id="">
+            <option value="">KontenA</option>
+            <option value="">KontenB</option>
+        </select> <br>        
+    </form>
+    <a href="./pert1.html"><button> Register </button></a>
+    <a href="./responsive.html"><button> Responsive </button></a>
+
+    <br><br>
+    <video controls width="250">
+
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                type="video/webm">
+    
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4">
+    
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+    <br>
+    <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure>
+    
+    
+</body>
+</html>
